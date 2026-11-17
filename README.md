@@ -1,8 +1,8 @@
 # IP2Location.io for Google Sheets
 
-A Google Apps Script that looks up highlighted IP addresses with IP2Location.io and writes the returned data into columns based on their header names.
+Look up IPv4 and IPv6 addresses directly in **Google Sheets** using [IP2Location.io](https://www.ip2location.io/). This Google Apps Script enriches selected rows with IP geolocation, ASN, ISP, and proxy information based on your spreadsheet column headers.
 
-No spreadsheet formulas are used. Lookup results are written as **static cell values**.
+Results are saved as **static cell values**, not formulas. You can use the script without an API key, or add a key for plan-dependent data and Bulk API access.
 
 ## Features
 
@@ -400,6 +400,22 @@ Always check the current IP2Location.io documentation and pricing because plans,
 - The key is transmitted to IP2Location.io through HTTPS using a Bearer authorization header.
 - Anyone modifying this Apps Script project should review the code before deployment, because the script itself necessarily has access to the current user's stored key when making an authenticated API request.
 
+## Related IP2Location Products
+
+| Product | Purpose |
+|---|---|
+| [IP2Location.io](https://www.ip2location.io/) | Hosted IP geolocation, ASN, and network intelligence APIs. |
+| [IP2Location LITE](https://www.ip2location.com/database/lite) | Free downloadable IP geolocation and ASN databases for offline use. |
+| [IP2Location Database](https://www.ip2location.com/database/ip2location) | Commercial offline IP geolocation databases. |
+| [IP2Proxy](https://www.ip2location.com/database/proxy) | IP proxy, VPN, TOR and anonymizer intelligence. |
+| [IP2WHOIS](https://www.ip2whois.com/) | Domain WHOIS lookup services. |
+
+## Support
+
+- [IP2Location.io API documentation](https://www.ip2location.io/ip2location-documentation)
+- [API plans and pricing](https://www.ip2location.io/pricing)
+- [Report issues or request features](https://github.com/ip2location/ip2location-io-google-sheets/issues)
+
 ## License
 
-See LICENSE.
+Licensed under the **MIT License**. See [LICENSE](https://github.com/ip2location/ip2location-io-google-sheets/blob/main/LICENSE).
